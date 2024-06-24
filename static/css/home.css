@@ -1,0 +1,55 @@
+body {
+    background-image: url("https://res.cloudinary.com/dvitufcfs/image/upload/v1719071678/YelpCamp/tzzueuc2ul9kpxfkl7uw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.nav-link,
+.navbar-brand {
+    color: rgb(252, 141, 5);
+    font-weight: 700;
+    border-bottom: 0.25rem solid transparent;
+    margin: 0px 10px;
+}
+
+.nav-link:hover,
+.navbar-brand :hover,
+.nav-link.act {
+    color: rgb(183, 214, 241);
+    border-bottom-color: rgb(252, 141, 5);
+}
+
+
+main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .container {
+    text-align: center;
+    margin-bottom: 10%;
+    font-weight: 600;
+    color: rgb(239, 230, 220);
+
+}
+
+.btn {
+    color: white;
+    background-color: rgb(252, 141, 5);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+}

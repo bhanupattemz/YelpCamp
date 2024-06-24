@@ -1,0 +1,149 @@
+body{
+   margin: 0px;
+   background: linear-gradient(45deg,#FFCBCB,#1679AB,#FFB1B1,#e3a3f7,#95D2B3,#5A72A0,#5f8ae7);
+   background-size: 300% 300%;
+   animation: color 12s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.author-show {
+    display: flex;
+    justify-content: end;
+}
+
+/* login */
+
+.login,.register {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+   
+}
+.inner-page{
+    border: 2px solid rgb(104, 103, 103);
+    border-radius: 5px;
+    padding: 0px;
+}
+.inner-image {
+    background-image: url("https://res.cloudinary.com/dvitufcfs/image/upload/v1719071763/YelpCamp/cvxtnc3vedo3j2yya4ep.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 252, 252);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.inner-form{
+    padding: 20px;
+
+}
+
+.inner-image a{
+    width: 30%;
+    border: 2px solid white;
+    color: white;
+    margin-left: 35%;
+    transition: 1s;
+}
+.inner-image a:hover{
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0,0.5);
+}
+
+
+/* maps */
+
+#cluster-map{
+    height: 450px; 
+    width: 100%;
+}
+#map{
+    height: 250px; 
+    width: 100%;
+}
+
+
+/* show Page */
+.show{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.show-image{
+    padding-bottom: 3px;
+}
+.show-map,.show-image{
+    border: 2px solid rgb(156, 154, 154);
+    margin: 2px;
+    border-radius: 5px;
+    padding: 1%;
+}
+.show-review{
+    border: 2px solid rgb(156, 154, 154);
+    border-radius: 5px;
+    padding: 1%;
+}
+
+/* camps page */
+.campground-image{
+    width: 100%;
+    height: fit-content;
+}
+.all-camps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* new campground */
+.new-camp{
+    border: 2px solid rgb(160, 157, 157);
+    padding:2% 5%;
+    border-radius: 2%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    #cluster-map {
+      height: 40vh; 
+    }
+    .show-image{
+        margin: 0px;    
+        padding: 3%;
+        border: 0px;
+       
+    }
+    .show-map{
+        margin: auto;
+        padding: 3%;
+        border: 0px;
+    }
+    .inner-page{
+        width: 100%;
+        margin: 5px 0px;
+        margin-left: 5%;
+    }
+  }
+
+  
+@media only screen and (min-width: 600px ) and (max-width:1023px){
+   .show-image,.show-map{
+    margin: 0px;
+   }
+   #map{
+    height: 160px;
+   }
+  }
