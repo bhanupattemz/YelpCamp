@@ -81,9 +81,6 @@ body{
     flex-direction: row;
     justify-content:space-evenly;
 }
-.show-image{
-    padding-bottom: 3px;
-}
 .show-map,.show-image{
     border: 2px solid rgb(156, 154, 154);
     margin: 2px;
@@ -117,19 +114,20 @@ body{
 
 
 @media only screen and (max-width: 600px) {
+    body{
+        animation: color 8s ease-in-out infinite;
+    }
     #cluster-map {
       height: 40vh; 
     }
     .show-image{
         margin: 0px;    
         padding: 3%;
-        border: 0px;
        
     }
     .show-map{
         margin: auto;
         padding: 3%;
-        border: 0px;
     }
     .inner-page{
         width: 100%;
