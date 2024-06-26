@@ -81,6 +81,9 @@ body{
     flex-direction: row;
     justify-content:space-evenly;
 }
+#map{
+    height:  200px;
+}
 .show-map,.show-image{
     border: 2px solid rgb(156, 154, 154);
     margin: 2px;
@@ -92,7 +95,9 @@ body{
     border-radius: 5px;
     padding: 1%;
 }
-
+.carousel-img{
+    height: 200px;
+}
 /* camps page */
 .campground-image{
     width: 100%;

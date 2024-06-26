@@ -1,18 +1,18 @@
 <% layout('layout/boilerplate') %>
 
-    <div class="row mb-3 show ">
+    <div class="row mb-3 show m-1">
         <div class="col-sm-5  mb-3 mt-3 show-image">
-            <div class="card-img-top">
+            <div class="mb-3">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <% if(campground.image.length!=0){ %>
                         <% for(let img of campground.image){ %>
                             <div class="carousel-item <%= campground.image.indexOf(img)==0?'active':'' %>">
-                                <img crossorigin="anonymous" src="<%= img.url %>" class="d-block w-100" alt="image of campground">
+                                <img crossorigin="anonymous" src="<%= img.url.replace("/upload","/upload/h_200") %>" class="d-block w-100 carousel-img" alt="image of campground" >
                             </div>
                             <% } %>
                             <% }else{ %>
-                                <img crossorigin="anonymous" src="https://res.cloudinary.com/dvitufcfs/image/upload/v1719212680/YelpCamp/r3s7gwqupnm96np8ib5w.jpg" class="d-block w-100" alt="image of campground">
+                                <img crossorigin="anonymous" src="https://res.cloudinary.com/dvitufcfs/image/upload/v1719212680/YelpCamp/r3s7gwqupnm96np8ib5w.jpg" class="d-block w-100" alt="image of campground" >
                                 <% } %>
                     </div>
                     <% if(campground.image.length>1) {%>
@@ -29,7 +29,7 @@
                         <% } %>
                 </div>
             </div>
-            <div class="card-body">
+            <div class="">
                 <h5 class="card-title">
                     <%= campground.title %>
                 </h5>
