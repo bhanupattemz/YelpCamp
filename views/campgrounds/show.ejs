@@ -8,7 +8,7 @@
                         <% if(campground.image.length!=0){ %>
                         <% for(let img of campground.image){ %>
                             <div class="carousel-item <%= campground.image.indexOf(img)==0?'active':'' %>">
-                                <img crossorigin="anonymous" src="<%= img.url.replace("/upload","/upload/h_200") %>" class="d-block w-100 carousel-img" alt="image of campground" >
+                                <img crossorigin="anonymous" src="<%= img.url%>" class="d-block w-100 carousel-img" alt="image of campground" >
                             </div>
                             <% } %>
                             <% }else{ %>
